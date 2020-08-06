@@ -5,7 +5,7 @@ const dotenv=require('dotenv').config();
 
 const { Sequelize } = require('sequelize');
 
-//database creation using sequelize
+//database creation using sequelize/
 const sequelize = new Sequelize(process.env.MYSQL_DB,process.env.DB_USER,process.env.DB_PASS,{
     host:process.env.DB_HOST,
     port:3306,

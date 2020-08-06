@@ -16,7 +16,7 @@ module.exports.checkToken = (req, res, next) => {
                     message: "Invalid token"
                 })
             } else {
-                console.log("decoded token", decoded)
+                console.log("decoded token", decoded);
                 next();
             }
         });

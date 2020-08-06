@@ -12,7 +12,7 @@ module.exports.create = async (req, res) => {
       message: "Name or Username or Password can't be blank!!"
     });
   } else {
-    console.log("req body", req.body)
+    console.log("req body", req.body);
     req.body.password = await bcrypt.hash(req.body.password, 10)//password encryption
     //email address validation 
     specificUser(req.body.username).then(User => {

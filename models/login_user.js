@@ -1,7 +1,7 @@
 'use strict';
 const Sequelize = require('sequelize');
 
-
+//
 const db = require("../config/mydatabase.js");
 
 const Users = db.sequelize.define('users', {
